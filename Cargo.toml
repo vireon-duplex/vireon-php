@@ -1,0 +1,19 @@
+[package]
+name = "vireon-php"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish = false
+
+[lib]
+name = "vireon_php"
+crate-type = ["cdylib"]
+
+[dependencies]
+vireon-sdk = { path = "../../client-sdk" }
+tokio = { workspace = true }
+once_cell = "1"
+
+[lints]
+workspace = true
